@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './Home.css';
 import logoIcon from '../assets/img/mazebot_logo.png';
+import './home.css';
 
 function Home() {
   const [selectedFeature, setSelectedFeature] = useState(null);
@@ -18,16 +18,16 @@ function Home() {
         <nav>
           <ul>
             <li>
-              <a href="#">Features</a>
+              <a href="/features">Features</a>
             </li>
             <li>
-              <a href="#">Workflow</a>
+              <a href="/workflow">Workflow</a>
             </li>
             <li>
-              <a href="#">FAQS</a>
+              <a href="/faqs">FAQS</a>
             </li>
             <li>
-              <a href="#">Support</a>
+              <a href="/support">Support</a>
             </li>
           </ul>
         </nav>
@@ -66,7 +66,7 @@ function Home() {
                   is essential for providing accurate and relevant responses
                   throughout your session.
                 </p>
-                <button>Learn more</button>
+                <button className="learn-more">Learn more</button>
               </div>
             )}
             {selectedFeature === 'Feature 2' && (
@@ -78,7 +78,7 @@ function Home() {
                   volutpat, purus urna vestibulum ligula, at semper
                   sapien mi vitae elit.
                 </p>
-                <button>Learn more</button>
+                <button className="learn-more">Learn more</button>
               </div>
             )}
             {selectedFeature === 'Feature 3' && (
@@ -90,7 +90,7 @@ function Home() {
                   volutpat, purus urna vestibulum ligula, at semper
                   sapien mi vitae elit.
                 </p>
-                <button>Learn more</button>
+                <button className="learn-more">Learn more</button>
               </div>
             )}
           </div>
