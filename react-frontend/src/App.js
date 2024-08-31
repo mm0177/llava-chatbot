@@ -1,12 +1,17 @@
-import './App.css';
+
 import Chatbot from './Chatbot/chatbot';
-import Home from './Homepage/home';
+import About from './Homepage/About';
+import Footer from './Homepage/Footer';
+import Home from './Homepage/Home';
+import Intro from './Homepage/Intro';
+import Navbar from './Homepage/Navbar';
 //import Chatbot from './Chatbot/chatbot';
 import Login from './usercomponents/login';
 
 function App() {
   return (
     <div className="App">
+      <Navbar/>
       <Home/>
     </div>
   );
