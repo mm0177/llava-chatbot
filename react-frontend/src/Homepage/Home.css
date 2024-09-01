@@ -110,7 +110,10 @@ html, body {
 }
 
 /* Main styles */
-
+.mainsection {
+  position: relative; /* Ensure the section is positioned correctly */
+  z-index: 1; /* Ensure content is on top of the video */
+}
 
 /* Intro section styles */
 

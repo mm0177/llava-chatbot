@@ -6,7 +6,7 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: 'Montserrat', sans-serif; /* Changed to Montserrat */
-    background-color: #202020; /* Matches the dark background in the chat area */
+     /* Matches the dark background in the chat area */
     color: white;
 }
 
