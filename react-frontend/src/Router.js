@@ -13,7 +13,6 @@ const AppRoutes = () => {
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/chatbot" element={<Chatbot />} />
-      {/* Add additional routes as needed */}
     </Routes>
   );
 };

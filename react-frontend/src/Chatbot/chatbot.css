@@ -15,7 +15,7 @@ body, html {
     height: 100vh;
 }
 
-.sidebar {
+.sidebar1 {
     width: 250px; /* Adjusted width to match the desired design */
     background-color: #F5F5F5;
     display: flex;
@@ -28,7 +28,7 @@ body, html {
     box-sizing: border-box; /* Ensure padding and border are included in the width */
 }
 
-.sidebar-top {
+.sidebar-top1 {
     padding: 20px;
 }
 
@@ -86,7 +86,7 @@ body, html {
     border-radius: 10px;
 }
 
-.sidebar-bottom {
+.sidebar-bottom1 {
     display: flex;
     flex-direction: column;
     padding: 10px;

@@ -1,6 +1,5 @@
 import React from 'react';
 import './Home.css';
-import logoIcon from '../assets/img/mazebot_logo.png';
 
 function About() {
   return (

@@ -61,8 +61,8 @@ function Chatbot() {
 
   return (
     <div className="chatbot-container">
-      <div className="sidebar">
-        <div className="sidebar-top">
+      <div className="sidebar1">
+        <div className="sidebar-top1">
           <div className="logo">
             <img src={logoIcon} alt="Mazebot Logo" className="logo-icon" />
             Mazebot
@@ -76,7 +76,7 @@ function Chatbot() {
             <p>conversation 1</p>
           </div>
         </div>
-        <div className="sidebar-bottom">
+        <div className="sidebar-bottom1">
           <button className="settings-btn">
             <FontAwesomeIcon icon={faCog} className='fa-cog' /> Settings
           </button>

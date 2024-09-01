@@ -1,22 +1,22 @@
-
-//import Chatbot from './Chatbot/chatbot';
-import About from './Homepage/About';
-import Features from './Homepage/Features';
-import Footer from './Homepage/Footer';
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Homepage/Home';
-import Intro from './Homepage/Intro';
-import Navbar from './Homepage/Navbar';
-//import Chatbot from './Chatbot/chatbot';
-//import Login from './usercomponents/login';
+import Chatbot from './Chatbot/chatbot';
+import Login from './usercomponents/login';
+import Register from './usercomponents/register';
 
 function App() {
   return (
-    <div className="App">
-      <Home/>
-      
-
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/chatbot" element={<Chatbot />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
-export default App;
+
+export default App;
