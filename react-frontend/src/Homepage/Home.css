@@ -1,4 +1,7 @@
 /* Ensure smooth scrolling behavior */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono:wght@400;700&display=swap');
+
 .html{
   scroll-behavior: smooth;
 }
@@ -15,6 +18,7 @@ html, body {
   margin: 0;
   padding: 0;
   overflow: auto;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Container */
@@ -32,7 +36,7 @@ html, body {
   color: #fff;
   padding: 0px;
   height: 67px;
-  backdrop-filter: blur(10px)
+  backdrop-filter: blur(30px)
 }
 
 .mazebot {
@@ -47,7 +51,7 @@ html, body {
   font-family: 'Nova Mono', monospace;
   font-size: 46px;
   margin: 0px;
-  color: white;
+  color: #5a77ed;
 }
 
 .logo {
@@ -66,10 +70,12 @@ html, body {
   padding: 0;
   margin: 0;
   display: flex;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .navbar li {
   margin: 0 1rem;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .navbar a {
@@ -97,6 +103,7 @@ html, body {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .auth-button:hover {
@@ -123,10 +130,11 @@ html, body {
   background-image: url("https://static.vecteezy.com/system/resources/previews/020/436/117/original/chatbot-ai-artificial-intelligence-technology-hitech-concept-chatbot-application-smart-bot-open-ai-line-technology-abstract-design-for-chatting-web-banner-background-transformation-vector.jpg");
   background-size: cover;
   background-position: center;
+  
 }
 
 .para{
-  font-size: 1.1rem;
+  font-size: 34px;
 }
 .middle{
   text-align: center;
@@ -152,7 +160,10 @@ html, body {
   margin-top: 3rem;
   height: 36px;
   margin-bottom: 100px;
+
+
 }
+
 /* Container for the video and content */
 .intro-container {
   position: relative;
@@ -161,6 +172,7 @@ html, body {
   justify-content: center;
   height: 668px;
   overflow: hidden;
+  
 }
 
 /* Video background */
@@ -189,10 +201,11 @@ html, body {
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-top-left-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .get-started-button {
-  background-color: black;
+  background-color: rgb(4, 26, 73);
   border: none;
   color: #fff;
   padding: 0.5rem 1rem;
@@ -200,6 +213,7 @@ html, body {
   cursor: pointer;
   transition: background-color 0.3s;
   border-bottom-right-radius: 20px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .get-started-button:hover {
@@ -233,6 +247,7 @@ html, body {
   margin: 0 0.5rem;
   cursor: pointer;
   transition: background-color 0.3s;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .feature-button.active {
@@ -249,6 +264,7 @@ html, body {
   flex-direction: column;
   align-items: center;
   color: white;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .feature-details {

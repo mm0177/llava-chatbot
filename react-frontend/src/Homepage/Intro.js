@@ -14,9 +14,10 @@ export default function Intro() {
     <div className="intro-container">
       
       <div className="intro-content">
-        <p className='welcome'>
-          Welcome to <p className='mazebot1'>Mazebot</p>
-        </p>
+      <p className='welcome'>
+  Welcome to <span className='mazebot1'>Mazebot</span>
+</p>
+
         <p className='para'>Your Conversational Image Recognition Assistant</p>
         <div className="input-container">
           <input type="text" placeholder="Enter your mail id" />
