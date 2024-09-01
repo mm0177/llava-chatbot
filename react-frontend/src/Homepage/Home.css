@@ -5,8 +5,8 @@
 
 /* Section padding to ensure smooth viewing */
 section {
-  padding-top: 80px; /* Adjust as needed for your design */
-  padding-bottom: 80px; /* Adjust as needed for your design */
+  padding-top: 0px; /* Adjust as needed for your design */
+  padding-bottom: 0px; /* Adjust as needed for your design */
 }
 
 /* Ensure the html and body have full height */
@@ -21,7 +21,6 @@ html, body {
 .app-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
 
 /* Header styles */
@@ -29,10 +28,11 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
+  
   color: #fff;
   padding: 0px;
   height: 67px;
+  backdrop-filter: blur(10px)
 }
 
 .mazebot {
@@ -47,7 +47,7 @@ html, body {
   font-family: 'Nova Mono', monospace;
   font-size: 46px;
   margin: 0px;
-  color: #8487f1;
+  color: white;
 }
 
 .logo {
@@ -73,14 +73,14 @@ html, body {
 }
 
 .navbar a {
-  color: #8588F3;
+  color: white;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
 }
 
 .navbar a:hover {
-  color: #676cef;
+  color: #2d7ccc;
 }
 
 .auth {
@@ -89,7 +89,7 @@ html, body {
 }
 
 .auth-button {
-  background-color: #8588F3;
+  background-color: #6091d8;
   border: none;
   color: #fff;
   padding: 0.5rem 1rem;
@@ -100,7 +100,7 @@ html, body {
 }
 
 .auth-button:hover {
-  background-color: #676cef;
+  background-color: #2d7ccc;
 }
 
 /* Main styles */
@@ -114,15 +114,20 @@ html, body {
 /* Intro section styles */
 .intro {
   text-align: center;
-  background-color: lightgray;
   margin: 0;
   padding: 3rem; /* Added padding */
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 430px;
+  height: 572px;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/020/436/117/original/chatbot-ai-artificial-intelligence-technology-hitech-concept-chatbot-application-smart-bot-open-ai-line-technology-abstract-design-for-chatting-web-banner-background-transformation-vector.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
+.para{
+  font-size: 1.1rem;
+}
 .middle{
   text-align: center;
 }
@@ -133,23 +138,57 @@ html, body {
 }
 
 .intro h2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: black;
   margin-bottom: 1.5rem;
+}
+.welcome{
+  font-size: 3rem;
 }
 
 .input-container {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
-  
+  margin-top: 3rem;
+  height: 36px;
+  margin-bottom: 100px;
+}
+/* Container for the video and content */
+.intro-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 668px;
+  overflow: hidden;
+}
+
+/* Video background */
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Sends the video behind the content */
+}
+
+/* Content that goes over the video */
+.intro-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
 }
 
 .input-container input {
-  padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 0px;
+  
     margin-right: 0;
+    border-bottom-left-radius: 20px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-top-left-radius: 20px;
 }
 
 .get-started-button {
@@ -157,21 +196,22 @@ html, body {
   border: none;
   color: #fff;
   padding: 0.5rem 1rem;
-  border-radius: 0px;
+  border-top-right-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s;
+  border-bottom-right-radius: 20px;
 }
 
 .get-started-button:hover {
-  background-color: #676cef;
+  background-color: #6091d8;
 }
 
 /* Features section styles */
 .features {
   margin-top: 0rem;
-  padding: 2rem;
+  padding: 5rem;
   background-color: black;
-  height: 420px;
+  height: 458px;
 }
 
 .feature-buttons {
@@ -196,13 +236,14 @@ html, body {
 }
 
 .feature-button.active {
-  background-color: #676cef; /* Highlighted button */
+  background-color: #6091d8; /* Highlighted button */
 }
 
 .feature-button:hover {
-  background-color: #676cef;
+  background-color: #6091d8;
 }
 
+/* Feature content styles */
 .feature-content {
   display: flex;
   flex-direction: column;
@@ -211,10 +252,38 @@ html, body {
 }
 
 .feature-details {
-  padding: 2rem; /* Increased padding */
+  display: flex; /* Use flexbox to align image and text side by side */
+  align-items: center;
+  padding: 4rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
+}
+
+.feature-image {
+  margin-right: 2rem;
+  width: 345px;
+  height: 251px;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+.feature-image1 {
+  margin-right: 5rem;
+  width: 510px;
+  height: 302px;
+  border-radius: 8px;
+  margin-top: 100px;
+}
+.feature-image2 {
+  margin-right: 2rem;
+  width: 345px;
+  height: 251px;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.feature-text {
+  flex: 1; /* Allow the text to take up the remaining space */
+  margin-right: 225px;
 }
 
 .learn-more {
@@ -225,11 +294,11 @@ html, body {
   cursor: pointer;
   transition: background-color 0.3s;
   margin-top: 1rem;
-  border: 2px solid #676cef;
+  border: 2px solid #6091d8;
 }
 
 .learn-more:hover {
-  background-color: #676cef;
+  background-color: #6091d8;
 }
 
 
@@ -259,8 +328,11 @@ html, body {
 
 .section-content{
   flex: 1;
+  padding: 3rem;
 }
-
+.list{
+  margin-top: 20px;
+}
 
 .image-placeholder {
   width: 300px;
@@ -304,19 +376,25 @@ html, body {
 .footer {
   background-color: #000;
   color: #fff;
-  padding: 20px 0;
+  padding: 33px 11px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  height: 205px;
+  gap: 30px;
 }
 
 .footer-content {
   margin-left: 20px;
 }
 
+
+
 .footer-socials {
-  margin-right: 20px;
+  margin-right: 0px;
   display: flex;
+  gap: 32px;
 }
 
 .social-icon {
