@@ -1,8 +1,20 @@
+/* Ensure smooth scrolling behavior */
+.html{
+  scroll-behavior: smooth;
+}
+
+/* Section padding to ensure smooth viewing */
+section {
+  padding-top: 80px; /* Adjust as needed for your design */
+  padding-bottom: 80px; /* Adjust as needed for your design */
+}
+
 /* Ensure the html and body have full height */
 html, body {
-  height: 100%;
+  height: auto;
   margin: 0;
   padding: 0;
+  overflow: auto;
 }
 
 /* Container */
@@ -26,7 +38,7 @@ html, body {
 .mazebot {
   font-family: 'Nova Mono', monospace;
   font-size: 20px;
-  margin-bottom: 16px;
+  margin: 0;
   text-align: left;
   display: flex;
   align-items: center; /* Align the text and icon vertically */
@@ -38,8 +50,13 @@ html, body {
   color: #8487f1;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+}
+
 .logo img {
-  height: 75px;
+  height: 80px;
   margin-right: 0.5rem;
   margin-top: 0.5rem;
 }
@@ -68,7 +85,7 @@ html, body {
 
 .auth {
   display: flex;
-  margin-right: 5px;
+  margin-right: 18px;
 }
 
 .auth-button {

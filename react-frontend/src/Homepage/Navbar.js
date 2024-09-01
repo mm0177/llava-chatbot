@@ -1,6 +1,6 @@
 import React from 'react';
 import logoIcon from '../assets/img/mazebot_logo.png';
-import'./Home.css';
+import './Home.css';
 
 export default function Navbar() {
   return (
@@ -12,10 +12,10 @@ export default function Navbar() {
         </div>
         <nav className="navbar">
           <ul>
-            <li><a href="/features">Features</a></li>
-            <li><a href="/workflow">Workflow</a></li>
-            <li><a href="/faqs">FAQS</a></li>
-            <li><a href="/support">Support</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">Workflow</a></li>
+            <li><a href="#faqs">FAQS</a></li>
+            <li><a href="#footer">Support</a></li>
           </ul>
         </nav>
         <div className="auth">

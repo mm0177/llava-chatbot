@@ -4,14 +4,24 @@ import Features from './Features';
 import About from './About';
 import Footer from './Footer';
 import './Home.css';
+
 function Home() {
   return (
     <div>
-      <Intro/>
-      <Features/>
-      <About/>
-      <Footer/>
+      <section id="intro">
+        <Intro />
+      </section>
+      <section id="features">
+        <Features />
+      </section>
+      <section id="about">
+        <About />
+      </section>
+      <section id="footer">
+        <Footer />
+      </section>
     </div>
   );
 }
+
 export default Home;
