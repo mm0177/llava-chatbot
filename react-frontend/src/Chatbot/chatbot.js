@@ -111,9 +111,9 @@ function Chatbot() {
           </label>
           <input type="text" placeholder="Type your message here..." />
           <button onClick={handleRecordingClick} className="mic-button">
-  <FontAwesomeIcon icon={faMicrophone} className='mic' />
-  <span className="mic-text">{isRecording ? ' Stop' : ' Start'}</span>
-</button>
+            <FontAwesomeIcon icon={faMicrophone} className='mic' />
+            <span className="mic-text">{isRecording ? ' Stop' : ' Start'}</span>
+          </button>
 
         </div>
       </div>

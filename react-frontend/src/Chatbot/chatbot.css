@@ -233,6 +233,20 @@ body, html {
 .image-upload-btn svg {
     font-size: 24px;
 }
+.image-preview {
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    margin: 10px;
+}
+
+.image-preview img {
+    max-width: 100%; /* Makes sure the image won't exceed the container's width */
+    max-height: 200px; /* Restricts the maximum height of the image */
+    width: auto; /* Maintains aspect ratio */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Adds some rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Adds a slight shadow for better visibility */
+}
 
 .mic-button {
     display: flex;
