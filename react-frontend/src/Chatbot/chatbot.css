@@ -234,6 +234,18 @@ body, html {
     font-size: 24px;
 }
 
-.mic {
-    color: white;
-}
+.mic-button {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white; /* Ensures the text inside the button is white */
+  }
+  
+  .mic-text {
+    margin-left: 5px; /* Adds some space between the microphone icon and the text */
+    color: white; /* Makes sure the text "Start" or "Stop" is white */
+  }
+  

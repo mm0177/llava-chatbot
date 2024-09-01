@@ -4,7 +4,6 @@ import Features from './Features';
 import About from './About';
 import Footer from './Footer';
 import './Home.css';
-import Navbar from './Navbar';
 
 function Home() {
   return (

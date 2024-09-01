@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link component
 import logoIcon from '../assets/img/mazebot_logo.png';
 import './Home.css';
 
@@ -19,8 +20,12 @@ export default function Navbar() {
           </ul>
         </nav>
         <div className="auth">
-          <button className="auth-button">Log in</button>
-          <button className="auth-button">Register</button>
+          <Link to="/login"> {/* Use Link component for navigation */}
+            <button className="auth-button">Log in</button>
+          </Link>
+          <Link to="/register"> {/* Use Link component for navigation */}
+            <button className="auth-button">Register</button>
+          </Link>
         </div>
       </header>
     </div>
