@@ -1,6 +1,0 @@
-/* Ensure that the app container takes up the full viewport height and width */
-.App {
-  text-align: center;
-  min-height: 100vh;
-  overflow: scroll; /* Allows scrolling */
-}

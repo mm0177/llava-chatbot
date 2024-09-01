@@ -1,14 +1,15 @@
 import React from 'react';
-import '../assets/animations/newbg.mp4';
 import './Home.css';
 import Navbar from './Navbar';
+import videoSrc from '../assets/animations/newbg.mp4';
+
 
 export default function Intro() {
   return (
     <div className="mainsection">
       <Navbar/>
       <video autoPlay muted loop className="video-bg">
-        <source src={require('../assets/animations/newbg.mp4')} type="video/mp4" />
+      <source src={videoSrc} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     <div className="intro-container">

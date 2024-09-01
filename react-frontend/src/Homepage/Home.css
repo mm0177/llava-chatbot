@@ -127,7 +127,6 @@ html, body {
   align-items: center;
   justify-content: center;
   height: 572px;
-  background-image: url("https://static.vecteezy.com/system/resources/previews/020/436/117/original/chatbot-ai-artificial-intelligence-technology-hitech-concept-chatbot-application-smart-bot-open-ai-line-technology-abstract-design-for-chatting-web-banner-background-transformation-vector.jpg");
   background-size: cover;
   background-position: center;
   
@@ -185,6 +184,7 @@ html, body {
   object-fit: cover;
   z-index: -1; /* Sends the video behind the content */
 }
+
 
 /* Content that goes over the video */
 .intro-content {
