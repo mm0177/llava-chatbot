@@ -6,13 +6,14 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: 'Montserrat', sans-serif; /* Changed to Montserrat */
-     /* Matches the dark background in the chat area */
+    background-color: #202020; /* Matches the dark background in the chat area */
     color: white;
 }
 
 .chatbot-container {
     display: flex;
     height: 100vh;
+    background-color: #202020; 
 }
 
 .sidebar1 {
@@ -28,30 +29,26 @@ body, html {
     box-sizing: border-box; /* Ensure padding and border are included in the width */
 }
 
-.sidebar-top1 {
-    padding: 20px;
-}
 
-.logo {
+.logo1 {
     font-family: 'Nova Mono', monospace;
     font-size: 32px;
-    margin-bottom: 20px;
     color: #000000;
-    text-align: left;
+    text-align: center;
     display: flex;
     align-items: center; /* Align the text and icon vertically */
 }
 
-.logo-icon {
-    width: 65px; /* Adjusted to match the first image */
-    height: 85px; /* Adjusted to match the first image */
-    margin-right: 5px; /* Adjusted spacing between icon and text */
+.logo-icon1{
+    width: 100px;
+    height: 150px;
+    margin-right: 10px;
 }
 
 .new-chat-btn {
-    width: 100%;
+    width: 80%;
     padding: 10px;
-    margin-bottom: 20px;
+    margin : 20px;
     background-color: #000000;
     color: white;
     border-radius: 5px; /* Adjusted to match the first image */
@@ -181,6 +178,7 @@ body, html {
     align-items: center;
     margin-right: 10px;
     cursor: pointer;
+    color: white;
 }
 
 .image-upload-btn svg {
@@ -237,6 +235,5 @@ body, html {
 }
 
 .mic {
-    color: white;
+    color: white;
 }
-

@@ -63,8 +63,8 @@ function Chatbot() {
     <div className="chatbot-container">
       <div className="sidebar1">
         <div className="sidebar-top1">
-          <div className="logo">
-            <img src={logoIcon} alt="Mazebot Logo" className="logo-icon" />
+          <div className="logo1">
+            <img src={logoIcon} alt="Mazebot Logo" className="logo-icon1" />
             Mazebot
           </div>
           <button className="new-chat-btn">+ New Chat</button>
@@ -120,4 +120,4 @@ function Chatbot() {
   );
 }
 
-export default Chatbot;
+export default Chatbot;
